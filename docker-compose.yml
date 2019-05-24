@@ -16,14 +16,5 @@ app:
         - redis
         - postgres
 
-web:
-    image: nginx
     ports:
-        - "80:80"
-        - "443:443"
-    volumes:
-        - ./default.conf:/etc/nginx/conf.d/default.conf
-        - ./nginx.key:/etc/nginx/ssl/nginx.key
-        - ./nginx.crt:/etc/nginx/ssl/nginx.crt
-    links:
-        - app
+        - "8080:8080"
