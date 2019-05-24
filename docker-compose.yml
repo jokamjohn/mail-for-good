@@ -16,4 +16,5 @@ app:
         - redis
         - postgres
     ports:
+      - "80:8080"
       - "443:8080"
